@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <title>Trần Mai Linh lớp 12 Anh 1 - Nhạc cụ dân tộc</title>
+    <!-- Google Font Dancing Script -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #F5EBDD;
+            background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="48" stroke="%23B22222" stroke-width="2" fill="none" opacity="0.05"/><circle cx="50" cy="50" r="40" stroke="%23B22222" stroke-width="1" fill="none" opacity="0.05"/><circle cx="50" cy="50" r="30" stroke="%23B22222" stroke-width="1" fill="none" opacity="0.03"/><line x1="50" y1="2" x2="50" y2="98" stroke="%23B22222" stroke-width="1" opacity="0.03"/><line x1="2" y1="50" x2="98" y2="50" stroke="%23B22222" stroke-width="1" opacity="0.03"/></svg>');
+            background-repeat: repeat;
+            margin: 20px auto;
+            max-width: 900px;
+            color: #1D2D44;
+        }
+        h1 {
+            font-family: 'Dancing Script', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 3.8rem;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-shadow: 2px 2px 5px #E0B4B4;
+            color: #B22222;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .instrument {
+            background-color: #FFFFFF;
+            padding: 20px 30px;
+            margin-bottom: 35px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(178,34,34,0.25);
+            border-left: 8px solid #B22222;
+            position: relative;
+            overflow: hidden;
+        }
+        .instrument::before {
+            content: "";
+            position: absolute;
+            top: 10px; bottom: 10px; left: 10px; right: 10px;
+            border: 3px dashed #B22222;
+            border-radius: 12px;
+            pointer-events: none;
+            opacity: 0.15;
+            z-index: 0;
+        }
+        .instrument h2 {
+            font-family: 'Dancing Script', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #8B0000;
+            border-bottom: 3px solid #8B0000;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 1;
+        }
+        .description {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #1D2D44;
+            margin-bottom: 20px;
+            text-align: justify;
+            position: relative;
+            z-index: 1;
+        }
+        .images {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        .images img {
+            width: 48%;
+            border-radius: 8px;
+            box-shadow: 0 6px 15px rgba(178,34,34,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .images img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(178,34,34,0.6);
+            z-index: 2;
+        }
+        .video-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .video-container h2 {
+            font-family: 'Dancing Script', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2.5rem;
+            color: #8B0000;
+            margin-bottom: 15px;
+        }
+        iframe {
+            width: 100%;
+            max-width: 650px;
+            height: 365px;
+            border-radius: 15px;
+            border: none;
+            box-shadow: 0 8px 20px rgba(178,34,34,0.25);
+            transition: box-shadow 0.3s ease;
+        }
+        iframe:hover {
+            box-shadow: 0 12px 30px rgba(178,34,34,0.5);
+        }
+        @media(max-width: 700px) {
+            .images img {
+                width: 100%;
+            }
+            iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Nhạc cụ dân tộc Việt Nam</h1>
+
+<div class="instrument">
+    <h2>Đàn Bầu</h2>
+    <p class="description">
+        Đàn bầu là một loại đàn dân tộc truyền thống của Việt Nam, nổi bật với một dây đàn duy nhất. 
+        Âm thanh của đàn bầu rất đặc biệt, ngân vang và trầm ấm, tạo cảm giác sâu lắng, trữ tình. 
+        Nhạc cụ này thường được sử dụng trong các buổi trình diễn nghệ thuật, biểu diễn truyền thống. 
+        Người chơi đàn bầu thường sử dụng kỹ thuật gẩy dây kết hợp với điều chỉnh cần gẩy để tạo ra nhiều âm sắc phong phú. 
+        Đàn bầu không chỉ là công cụ âm nhạc mà còn là biểu tượng văn hóa của người Việt.
+    </p>
+    <div class="images">
+        <img src="https://image.vovworld.vn/w500/uploaded/vovworld/qosrgt/2014_07_18/dan_copy.jpg" alt="Đàn Bầu 1" />
+        <img src="https://tatham.vn/media/lib/bieu-dien-dan-bau-240714.jpg" alt="Đàn Bầu 2" />
+    </div>
+</div>
+
+<div class="instrument">
+    <h2>Khèn</h2>
+    <p class="description">
+        Khèn là một loại nhạc cụ thổi truyền thống, thường được làm từ ống trúc, phổ biến trong cộng đồng người dân tộc Mông và các dân tộc Tây Bắc. 
+        Âm thanh của khèn rất sôi động và vang vọng, được sử dụng trong các lễ hội, nghi lễ và các dịp tụ họp cộng đồng. 
+        Người chơi khèn cần có kỹ thuật thổi và điều khiển hơi khéo léo để tạo ra những giai điệu đặc trưng. 
+        Khèn không chỉ dùng để giải trí mà còn là phương tiện truyền tải câu chuyện, tình cảm và bản sắc văn hóa dân tộc. 
+        Đây là một nhạc cụ quan trọng góp phần giữ gìn nét đẹp truyền thống và văn hóa của các dân tộc thiểu số.
+    </p>
+    <div class="images">
+        <img src="https://images.baodantoc.vn/uploads/2020/Tháng%207/Ngày_23/nhac-cu-truyen-thong-cua-nguoi-mong-1-min(1).jpg" alt="Khèn 1" />
+        <img src="https://cdnmedia.baotintuc.vn/Upload/3qVxwVtNEPp6Wp9kkF77g/files/2019/07/16/khen1.jpg" alt="Khèn 2" />
+    </div>
+</div>
+
+<div class="instrument">
+    <h2>Đàn Tranh</h2>
+    <p class="description">
+        Đàn tranh là một nhạc cụ dây truyền thống phổ biến ở Việt Nam, thường có từ 16 đến 17 dây. 
+        Âm thanh đàn tranh mềm mại, du dương, thể hiện được nhiều cung bậc cảm xúc khác nhau. 
+        Đàn tranh thường được sử dụng trong các bản nhạc dân gian, các tiết mục nghệ thuật truyền thống. 
+        Người chơi đàn tranh phải có kỹ năng gảy và điều chỉnh dây linh hoạt để tạo nên những giai điệu đặc sắc. 
+        Đây là nhạc cụ không thể thiếu trong dàn nhạc truyền thống của nhiều vùng miền.
+    </p>
+    <div class="images">
+                <img src="https://nottram.edu.vn/wp-content/uploads/2023/07/hoc-dan-tranh.jpg" alt="Đàn Tranh 1" />
+        <img src="https://nhactruyenthong.vn/wp-content/uploads/2020/07/Đàn-Tranh-Việt-Nam-1.jpg" alt="Đàn Tranh 2" />
+    </div>
+</div>
+
+<div class="instrument">
+    <h2>Đàn Nhị</h2>
+    <p class="description">
+        Đàn nhị là nhạc cụ dây có hai dây, thường được chơi bằng cách dùng cung kéo. 
+        Nhạc cụ này được sử dụng trong các thể loại âm nhạc truyền thống như hát xẩm, hát chèo, và trong các dàn nhạc dân gian. 
+        Âm thanh đàn nhị mềm mại, trầm ấm, thường dùng để diễn tả các cung bậc cảm xúc khác nhau trong âm nhạc. 
+        Người chơi đàn nhị cần kỹ thuật và cảm thụ nhạc tinh tế để tạo nên những bản nhạc đầy cảm xúc. 
+        Đàn nhị là một phần quan trọng trong văn hóa âm nhạc truyền thống của Việt Nam.
+    </p>
+    <div class="images">
+        <img src="https://cdn.shopify.com/s/files/1/0604/1947/3475/files/dan-nhi-2_480x480.jpg?v=1732937511" alt="Đàn Nhị 1" />
+        <img src="https://kenhitv.vn/wp-content/uploads/2019/07/dan-nhi.jpg" alt="Đàn Nhị 2" />
+    </div>
+</div>
+
+<!-- Video tổng hợp được đặt cuối trang -->
+<div class="video-container">
+    <h2>Video 1: Tổng hợp nhạc cụ dân tộc Việt Nam</h2>
+    <iframe src="https://www.youtube.com/embed/-6cigDsjWgA" title="Tổng hợp nhạc cụ dân tộc Việt Nam" allowfullscreen loading="lazy"></iframe>
+</div>
+
+<div class="video-container">
+    <h2>Video 2: Tổng hợp nhạc cụ dân tộc Việt Nam</h2>
+    <iframe src="https://www.youtube.com/embed/83UePgJrMuE" title="Tổng hợp nhạc cụ dân tộc Việt Nam" allowfullscreen loading="lazy"></iframe>
+</div>
+
+</body>
+</html>
